@@ -12,11 +12,11 @@ Shell script to test speed and pings to the following datacenters:
 
 **Usage:**
 
-If you trust me, these commands will download and run the scripts:
+If you trust me, these commands will download and run the scripts automatically:
 
 ```
-curl -o- https://raw.githubusercontent.com/jakejarvis/datacenter-speed-tests/master/ping.sh | bash
-curl -o- https://raw.githubusercontent.com/jakejarvis/datacenter-speed-tests/master/speed.sh | bash
+wget -qO - https://raw.githubusercontent.com/jakejarvis/datacenter-speed-tests/master/ping.sh | bash
+wget -qO - https://raw.githubusercontent.com/jakejarvis/datacenter-speed-tests/master/speed.sh | bash
 ```
 
 Or, clone the repository and make sure you make the scripts executable before running:
