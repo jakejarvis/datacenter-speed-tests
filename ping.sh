@@ -16,7 +16,7 @@ done
 
 echo -e "\n\nAWS Ping Test:\n"
 
-for DC in us-east-1 us-west-1 us-west-2 eu-central-1 eu-west-1 eu-west-2 ap-northeast-1 ap-south-1 ap-southeast-1 ap-southeast-2 sa-east-1
+for DC in us-east-1 us-west-1 us-west-2 eu-north-1 ca-central-1 eu-central-1 eu-west-1 eu-west-2 ap-northeast-1 ap-south-1 ap-southeast-1 ap-southeast-2 sa-east-1
 do
     echo "$DC: $(ping -i .2 -c 10 -q ec2.$DC.amazonaws.com | awk -F/ '/^round|^rtt/{print $5}') ms"
 done

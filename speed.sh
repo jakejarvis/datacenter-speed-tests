@@ -16,7 +16,7 @@ done
 
 echo -e "\n\nAWS Speed Test: (10MB each)\n"
 
-for DC in us-east-1 us-west-1 us-west-2 eu-central-1 eu-west-1 eu-west-2 ap-northeast-1 ap-south-1 ap-southeast-1 ap-southeast-2 sa-east-1
+for DC in us-east-1 us-west-1 us-west-2 eu-north-1 ca-central-1 eu-central-1 eu-west-1 eu-west-2 ap-northeast-1 ap-south-1 ap-southeast-1 ap-southeast-2 sa-east-1
 do
     echo "$DC: $(wget -O /dev/null http://$DC-ec2.cloudharmony.net/probe/test10mb.jpg 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}')"
 done
