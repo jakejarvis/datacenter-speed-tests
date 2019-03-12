@@ -1,16 +1,14 @@
 # Speed & Ping Tests for Cloud Hosting Providers
 
-Shell script to test speed and pings to the following datacenters:
+### Notes:
 
-**Notes:**
-
-- Speed tests for ***each datacenter*** can use up to **100MB of data**. Be careful if your ISP caps your data usage!
+- Speed tests for ***each data center*** can use up to **100MB of data**. Be careful if your ISP caps your data usage!
 - Files are downloaded via HTTP (not HTTPS) to get pure speed without encryption overhead.
-- If it looks like the script is doing nothing, the current test is probably just taking a while — especially when testing far-away regions. If you already know that testing other continents is futile, just remove them from the for loops. (progress indicators are on the to-do list!)
+- If it looks like the script has crashed, the current test is probably just taking a while — especially when testing far-away regions. If you already know that testing other continents is futile, just remove them from the for loops in `speed.sh`.
 - AWS and GCP tests courtesy of [CloudHarmony](https://cloudharmony.com/).
 - Tests can always be influenced by outside variables. Run the scripts multiple times if you want to ensure accuracy. Obviously, evil throttling ISPs can mess up the results too.
 
-**Usage:**
+### Usage:
 
 If you trust me, these commands will download and run the scripts automatically:
 
@@ -28,6 +26,10 @@ chmod +x ping.sh && chmod +x speed.sh
 ./ping.sh
 ./speed.sh
 ```
+
+### Data centers:
+
+Scripts will test speed and pings to the following data centers:
 
 **DigitalOcean:** [(locations)](https://www.digitalocean.com/docs/platform/availability-matrix/#datacenter-regions)
 
@@ -74,10 +76,10 @@ chmod +x ping.sh && chmod +x speed.sh
 
 **Google Cloud:** [(locations)](https://cloud.google.com/compute/docs/regions-zones/)
 
-- us-central1
 - us-east1
 - us-east4
 - us-west1
+- us-central1
 - northamerica-northeast1
 - asia-east1
 - asia-east2
