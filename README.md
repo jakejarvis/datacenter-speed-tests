@@ -113,6 +113,11 @@ Scripts will test speed and pings to the following data centers:
 - sgp
 - hnd-jp
 
+### Screenshots:
+
+![speed screenshot](screenshot-speed.png)
+![ping screenshot](screenshot-ping.png)
+
 ---
 
 Inspired by https://www.reddit.com/r/webdev/comments/6ylmki/heres_an_easy_way_to_find_the_nearest/
