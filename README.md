@@ -60,6 +60,7 @@ Scripts will test speed and pings to the following data centers:
 **Amazon Web Services:** [(locations)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html)
 
 - us-east-1
+- us-east-2
 - us-west-1
 - us-west-2
 - ca-central-1
@@ -69,21 +70,27 @@ Scripts will test speed and pings to the following data centers:
 - eu-west-2
 - eu-west-3
 - ap-northeast-1
+- ap-northeast-2
+- ap-northeast-3
 - ap-south-1
 - ap-southeast-1
 - ap-southeast-2
+- ap-east-1
 - sa-east-1
+- me-south-1
 
 **Google Cloud:** [(locations)](https://cloud.google.com/compute/docs/regions-zones/)
 
 - us-east1
 - us-east4
 - us-west1
+- us-west2
 - us-central1
 - northamerica-northeast1
 - asia-east1
 - asia-east2
 - asia-northeast1
+- asia-northeast2
 - asia-south1
 - asia-southeast1
 - australia-southeast1
@@ -92,6 +99,7 @@ Scripts will test speed and pings to the following data centers:
 - europe-west2
 - europe-west3
 - europe-west4
+- europe-west6
 - southamerica-east1
 
 **Vultr/Choopa:** [(locations)](https://www.vultr.com/locations/)
