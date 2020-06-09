@@ -1,23 +1,23 @@
 # Speed & Ping Tests for Cloud Hosting Providers
 
-### Notes:
+## Notes
 
-- Speed tests for ***each data center*** can use up to **100MB of data**. Be careful if your ISP caps your data usage!
+- Speed tests for ***each region of each provider*** (there are over 80) can use **up to 100MB of data**. Be careful if your ISP caps your data usage!
 - Files are downloaded via HTTP (not HTTPS) to get pure speed without encryption overhead.
+- Tests can always be influenced by outside variables. Run the scripts multiple times if you want to ensure accuracy. Evil throttling ISPs can mess up the results too, of course.
 - If it looks like the script has crashed, the current test is probably just taking a while — especially when testing far-away regions. If you already know that testing other continents is futile, just remove them from the for loops in `speed.sh`.
-- AWS and GCP tests courtesy of [CloudHarmony](https://cloudharmony.com/).
-- Tests can always be influenced by outside variables. Run the scripts multiple times if you want to ensure accuracy. Obviously, evil throttling ISPs can mess up the results too.
+- **Thank you to [CloudHarmony](https://cloudharmony.com/) for providing AWS and GCP endpoints for testing!**
 
-### Usage:
+## Usage
 
-If you trust me, these commands will download and run the scripts automatically:
+If you trust me (which you shouldn't, _please_ don't trust random people on the internet!) these commands will download and run the scripts automatically:
 
 ```
 wget -qO - https://raw.githubusercontent.com/jakejarvis/datacenter-speed-tests/master/ping.sh | bash
 wget -qO - https://raw.githubusercontent.com/jakejarvis/datacenter-speed-tests/master/speed.sh | bash
 ```
 
-Or, clone the repository and make sure you make the scripts executable before running:
+Or, clone the repository and make sure the scripts are executable before running:
 
 ```
 git clone https://github.com/jakejarvis/datacenter-speed-tests.git
@@ -27,11 +27,11 @@ chmod +x ping.sh && chmod +x speed.sh
 ./speed.sh
 ```
 
-### Data centers:
+## Providers & Regions
 
 Scripts will test speed and pings to the following data centers:
 
-**DigitalOcean:** [(locations)](https://www.digitalocean.com/docs/platform/availability-matrix/#datacenter-regions)
+#### [DigitalOcean](https://www.digitalocean.com/docs/platform/availability-matrix/#datacenter-regions)
 
 - NYC1
 - NYC2
@@ -47,7 +47,7 @@ Scripts will test speed and pings to the following data centers:
 - SGP1
 - BLR1
 
-**Linode:** [(locations)](https://www.linode.com/linodes#features-dc-container)
+#### [Linode](https://www.linode.com/global-infrastructure/)
 
 - Newark
 - Atlanta
@@ -61,7 +61,7 @@ Scripts will test speed and pings to the following data centers:
 - Toronto
 - Mumbai
 
-**Amazon Web Services:** [(locations)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html)
+#### [Amazon Web Services](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html)
 
 - us-east-1
 - us-east-2
@@ -85,7 +85,7 @@ Scripts will test speed and pings to the following data centers:
 - me-south-1
 - af-south-1
 
-**Google Cloud:** [(locations)](https://cloud.google.com/compute/docs/regions-zones/)
+#### [Google Cloud](https://cloud.google.com/compute/docs/regions-zones/)
 
 - us-east1
 - us-east4
@@ -109,7 +109,7 @@ Scripts will test speed and pings to the following data centers:
 - europe-west6
 - southamerica-east1
 
-**Vultr/Choopa:** [(locations)](https://www.vultr.com/locations/)
+#### [Vultr/Choopa](https://www.vultr.com/features/datacenter-locations/)
 
 - nj-us
 - il-us
@@ -129,7 +129,7 @@ Scripts will test speed and pings to the following data centers:
 - hnd-jp
 - sel-kor
 
-### Screenshots:
+## Screenshots
 
 ![speed screenshot](screenshot-speed.png)
 ![ping screenshot](screenshot-ping.png)
