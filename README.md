@@ -38,6 +38,7 @@ Scripts will test speed and pings to the following data centers:
 - NYC3
 - SFO1
 - SFO2
+- SFO3
 - TOR1
 - LON1
 - FRA1
@@ -56,6 +57,9 @@ Scripts will test speed and pings to the following data centers:
 - Frankfurt
 - Singapore
 - Tokyo
+- Sydney
+- Toronto
+- Mumbai
 
 **Amazon Web Services:** [(locations)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html)
 
@@ -69,6 +73,7 @@ Scripts will test speed and pings to the following data centers:
 - eu-west-1
 - eu-west-2
 - eu-west-3
+- eu-south-1
 - ap-northeast-1
 - ap-northeast-2
 - ap-northeast-3
@@ -78,6 +83,7 @@ Scripts will test speed and pings to the following data centers:
 - ap-east-1
 - sa-east-1
 - me-south-1
+- af-south-1
 
 **Google Cloud:** [(locations)](https://cloud.google.com/compute/docs/regions-zones/)
 
@@ -85,6 +91,7 @@ Scripts will test speed and pings to the following data centers:
 - us-east4
 - us-west1
 - us-west2
+- us-west3
 - us-central1
 - northamerica-northeast1
 - asia-east1
@@ -110,7 +117,7 @@ Scripts will test speed and pings to the following data centers:
 - fl-us
 - tx-us
 - sjo-ca-us
-- lax-ca-us (down at time of commit)
+- lax-ca-us
 - wa-us
 - tor-ca
 - fra-de
@@ -120,6 +127,7 @@ Scripts will test speed and pings to the following data centers:
 - syd-au
 - sgp
 - hnd-jp
+- sel-kor
 
 ### Screenshots:
 
