@@ -43,3 +43,11 @@ for DC in NJ-US IL-US GA-US FL-US TX-US SJO-CA-US LAX-CA-US WA-US TOR-CA FRA-DE 
 do
     printf "$DC: \t$(ping -i .2 -c 10 -q $DC-ping.vultr.com | awk -F/ '/^round|^rtt/{print $5}') ms\n" | expand -t 20
 done
+
+printf "\n\nCoreWeave Ping Test:\n\n"
+
+# https://docs.coreweave.com/data-center-regions
+for DC in LAS1 LGA1 ORD1
+do
+    printf "$DC: \t$(ping -i .2 -c 10 -q ping-$DC.tenant-sta-mooodev-hassel.coreweave.cloud | awk -F/ '/^round|^rtt/{print $5}') ms\n" | expand -t 20
+done
