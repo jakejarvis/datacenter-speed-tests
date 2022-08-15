@@ -64,8 +64,8 @@ done
 printf "\n\nCoreWeave Speed Test: (100MB each)\n\n"
 
 # https://docs.coreweave.com/data-center-regions
-for DC in LAS1 LGA1 ORD1
+for DC in las1 lga1 ord1
 do
     printf "$DC: \e\n"
-    printf "$(wget -O /dev/null http://http.tenant-sta-mooodev-hassel.$DC.ingress.coreweave.cloud/100M 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}')\e\n" & spinner $!
+    printf "$(wget -O /dev/null http://http.speedtest.$DC.coreweave.com/100M 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}')\e\n" & spinner $!
 done

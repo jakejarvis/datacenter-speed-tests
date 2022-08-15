@@ -47,7 +47,7 @@ done
 printf "\n\nCoreWeave Ping Test:\n\n"
 
 # https://docs.coreweave.com/data-center-regions
-for DC in LAS1 LGA1 ORD1
+for DC in las1 lga1 ord1
 do
-    printf "$DC: \t$(ping -i .2 -c 10 -q ping-$DC.tenant-sta-mooodev-hassel.coreweave.cloud | awk -F/ '/^round|^rtt/{print $5}') ms\n" | expand -t 20
+    printf "$DC: \t$(ping -i .2 -c 10 -q ping.speedtest.$DC.coreweave.com | awk -F/ '/^round|^rtt/{print $5}') ms\n" | expand -t 20
 done
