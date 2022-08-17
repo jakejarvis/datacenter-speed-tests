@@ -129,6 +129,12 @@ Scripts will test speed and pings to the following data centers:
 - hnd-jp
 - sel-kor
 
+#### [CoreWeave](https://docs.coreweave.com/data-center-regions)
+
+- lga1
+- ord1
+- las1
+
 ## Screenshots
 
 ![speed screenshot](screenshot-speed.png)
